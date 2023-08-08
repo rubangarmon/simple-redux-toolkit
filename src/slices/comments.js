@@ -14,11 +14,13 @@ const commentsSlice = createSlice({
             state.loading = true
         },
         getCommentsSuccess: (state, {payload}) => {
+            // eslint-disable-next-line no-unused-expressions
             state.comments = payload,
             state.loading = false,
             state.hasErrors = false
         },
         getCommentsFailure: state => {
+            // eslint-disable-next-line no-unused-expressions
             state.loading = false,
             state.hasErrors = true
         }
